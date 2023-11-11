@@ -1,0 +1,180 @@
+{
+    "realEstateCareReport":[
+        {
+            "id" : 1,
+            "created" : "2023-11-09T15:30:45+01:00",
+            "updated" : "",
+            "damageNotation": {
+                "location" : "Amsterdam",
+                "newDamage" : true,
+                "damageSort" : "Vandalisme",
+                "date" : "2023-11-09T15:30:45+01:00",
+                "urgentToRepair" : false,
+                "description" : "De tussendeur van de woning is met geweldd ingetrapt, nieuwe deur is nodig voor nieuwe huurders."
+            },
+            "deferredMaintenance" : {
+                "location" : "Amsterdam",
+                "maintenanceSort" : "Elektra",
+                "urgentToMaintain" : false,
+                "costEstimate" : "500 - 1500"
+
+            },
+            "inspectionTechnicalInstallations": {
+                "location" : "Amsterdam",
+                "installationType" : "Verwarming",
+                "reportedMalfunction" : "Verwaming doet het niet, blijft koud.",
+                "testProcedure" : "@/assets/eneco_installatie.pdf",
+                "approved" : false,
+                "description" : "De verwarming is inderdaad kapot, moet gerepareerd worden door Eneco."
+            },
+            "inventorizeModifications" :{
+                "currentSituationAndAlreadyDocumentedModifications" : "@/assets/report1.pdf",
+                "locationModification" : "Zolder",
+                "modificationMadeBy" : " onbekend",
+                "descriptionOfModification" : "De ramen zijn geblindeerd",
+                "actionToBeTaken" : "Laten verwijderen",
+                "description" : "De blindering van de ruiten is er op vastgelijmd, verwijderen met warmtepistool oid."
+
+            }
+        },
+        {
+            "id" : 2,
+            "created" : "2023-11-09T15:30:45+01:00",
+            "updated" : "",
+            "damageNotation": {
+                "location" : "Rotterdam",
+                "newDamage" : false,
+                "damageSort" : "Waterlekkage",
+                "date" : "2023-11-09T15:30:45+01:00",
+                "urgentToRepair" : true,
+                "description" : "Plafond in de keuken vertoont waterlekkage, onmiddellijke reparatie vereist."
+            },
+            "deferredMaintenance": {
+                "location" : "Rotterdam",
+                "maintenanceSort" : "Loodgieterswerk",
+                "urgentToMaintain" : true,
+                "costEstimate" : "800 - 2000"
+            },
+            "inspectionTechnicalInstallations": {
+                "location" : "Rotterdam",
+                "installationType" : "Elektriciteit",
+                "reportedMalfunction" : "Stopcontacten in de woonkamer werken niet.",
+                "testProcedure" : "@/assets/stedin_installation.pdf",
+                "approved" : false,
+                "description" : "Problemen met elektrische bedrading geconstateerd, Stedin moet worden ingeschakeld voor reparatie."
+            },
+            "inventorizeModifications" :{
+                "currentSituationAndAlreadyDocumentedModifications" : "@/assets/report2.pdf",
+                "locationModification" : "Badkamer",
+                "modificationMadeBy" : " onbekend",
+                "descriptionOfModification" : "Douche is verplaatst naar tegenoverliggende muur.",
+                "actionToBeTaken" : "Herstellen naar oorspronkelijke staat",
+                "description" : "Douche verkeerd geplaatst, herstelwerkzaamheden noodzakelijk."
+            }
+        },
+        {
+            "id" : 3,
+            "created" : "2023-11-09T15:30:45+01:00",
+            "updated" : "",
+            "damageNotation": {
+                "location" : "Utrecht",
+                "newDamage" : true,
+                "damageSort" : "Inbraak",
+                "date" : "2023-11-09T15:30:45+01:00",
+                "urgentToRepair" : true,
+                "description" : "Inbraak in de garage, deur beschadigd en moet worden vervangen."
+            },
+            "deferredMaintenance": {
+                "location" : "Utrecht",
+                "maintenanceSort" : "Dakbedekking",
+                "urgentToMaintain" : true,
+                "costEstimate" : "1200 - 3000"
+            },
+            "inspectionTechnicalInstallations": {
+                "location" : "Utrecht",
+                "installationType" : "Airconditioning",
+                "reportedMalfunction" : "Airco in slaapkamer maakt vreemd geluid.",
+                "testProcedure" : "@/assets/cooling_experts_test.pdf",
+                "approved" : false,
+                "description" : "Problemen met de airconditioningseenheid, gespecialiseerde inspectie vereist."
+            },
+            "inventorizeModifications" :{
+                "currentSituationAndAlreadyDocumentedModifications" : "@/assets/report3.pdf",
+                "locationModification" : "Woonkamer",
+                "modificationMadeBy" : " onbekend",
+                "descriptionOfModification" : "Nieuwe muurkleur aangebracht.",
+                "actionToBeTaken" : "Accepteren",
+                "description" : "Muurkleur gewijzigd, geen verdere actie vereist."
+            }
+        },
+        {
+            "id" : 4,
+            "created" : "2023-11-09T15:30:45+01:00",
+            "updated" : "",
+            "damageNotation": {
+                "location" : "Den Haag",
+                "newDamage" : false,
+                "damageSort" : "Brand",
+                "date" : "2023-11-09T15:30:45+01:00",
+                "urgentToRepair" : false,
+                "description" : "Vorige brandgevolgen zijn hersteld, geen nieuwe schade gemeld."
+            },
+            "deferredMaintenance": {
+                "location" : "Den Haag",
+                "maintenanceSort" : "Sanitair",
+                "urgentToMaintain" : false,
+                "costEstimate" : "300 - 800"
+            },
+            "inspectionTechnicalInstallations": {
+                "location" : "Den Haag",
+                "installationType" : "Beveiligingssysteem",
+                "reportedMalfunction" : "Alarmsysteem geeft foutmeldingen.",
+                "testProcedure" : "@/assets/security_company_test.pdf",
+                "approved" : false,
+                "description" : "Fouten in het beveiligingssysteem geconstateerd, professionele reparatie vereist."
+            },
+            "inventorizeModifications" :{
+                "currentSituationAndAlreadyDocumentedModifications" : "@/assets/report4.pdf",
+                "locationModification" : "Tuin",
+                "modificationMadeBy" : " onbekend",
+                "descriptionOfModification" : "Nieuw tuinhek geplaatst.",
+                "actionToBeTaken" : "Goedkeuren",
+                "description" : "Tuinhek vernieuwd, goedkeuring vereist voor behoud."
+            }
+        },
+        {
+            "id" : 5,
+            "created" : "2023-11-09T15:30:45+01:00",
+            "updated" : "",
+            "damageNotation": {
+                "location" : "Eindhoven",
+                "newDamage" : true,
+                "damageSort" : "Stormschade",
+                "date" : "2023-11-09T15:30:45+01:00",
+                "urgentToRepair" : true,
+                "description" : "Dak beschadigd door recente storm, onmiddellijke reparatie nodig."
+            },
+            "deferredMaintenance": {
+                "location" : "Eindhoven",
+                "maintenanceSort" : "Loodgieterswerk",
+                "urgentToMaintain" : true,
+                "costEstimate" : "1000 - 2500"
+            },
+            "inspectionTechnicalInstallations": {
+                "location" : "Eindhoven",
+                "installationType" : "Waterleiding",
+                "reportedMalfunction" : "Leidingen in de badkamer lekken.",
+                "testProcedure" : "@/assets/water_company_test.pdf",
+                "approved" : false,
+                "description" : "Lekkage in de waterleidingen, directe reparatie nodig."
+            },
+            "inventorizeModifications" :{
+                "currentSituationAndAlreadyDocumentedModifications" : "@/assets/report5.pdf",
+                "locationModification" : "Keuken",
+                "modificationMadeBy" : " onbekend",
+                "descriptionOfModification" : "Nieuw keukenblad geïnstalleerd.",
+                "actionToBeTaken" : "Goedkeuren",
+                "description" : "Keukenblad vernieuwd, goedkeuring vereist voor behoud"     
+            }
+        }]
+}
