@@ -10,8 +10,10 @@
                 xxl="6"
             >
                 <v-card class="d-flex flex-column py-5 ma-1 text-center h-auto" :elevation="7">
-                    <v-icon icon="mdi-calendar-month" size="200" class="mx-auto" ></v-icon>
-                    <v-card-title>Scheduled</v-card-title>
+                    <router-link class="dashboardLink" to="/scheduled">
+                        <v-icon icon="mdi-calendar-month" class="mx-auto icon-size" ></v-icon>
+                        <v-card-title>Scheduled</v-card-title>
+                    </router-link>
                 </v-card>
             </v-col>
             <v-col
@@ -23,7 +25,10 @@
                 xxl="6"
             >
             <v-card class="d-flex flex-column py-5 ma-1 text-center" :elevation="7">
-                    <v-icon icon="mdi-check-circle" size="200" class="mx-auto" ></v-icon>              <v-card-title>Completed</v-card-title>
+                    <router-link class="dashboardLink" to="/inspections">
+                    <v-icon icon="mdi-check-circle" class="mx-auto icon-size" ></v-icon>              
+                    <v-card-title>Completed</v-card-title>
+                    </router-link>
                 </v-card>
             </v-col>
             <v-col
@@ -35,8 +40,10 @@
                 xxl="6"
             >
             <v-card class="d-flex flex-column py-5 ma-1 text-center" :elevation="7">
-                    <v-icon icon="mdi-archive" size="200" class="mx-auto"></v-icon>
+                    <router-link class="dashboardLink" to="/knowledge-base">
+                    <v-icon icon="mdi-archive" class="mx-auto icon-size"></v-icon>
                     <v-card-title>Knowledge base</v-card-title>
+                    </router-link>
                 </v-card>
             </v-col>
             <v-col
@@ -48,8 +55,10 @@
                 xxl="6"
             >
             <v-card class="d-flex flex-column py-5 ma-1 text-center" :elevation="7">
-                    <v-icon icon="mdi-cog" size="200" class="mx-auto"></v-icon>
+                    <router-link class="dashboardLink" to="/settings">
+                    <v-icon icon="mdi-cog" class="mx-auto icon-size"></v-icon>
                     <v-card-title>Settings</v-card-title>
+                    </router-link>
                 </v-card>
             </v-col>
         </v-row>
@@ -71,4 +80,28 @@ data: () => ({
 }),
 }
 </script>
+
+<style scoped>
+
+.dashboardLink {
+    text-decoration: none; 
+    color: inherit;
+    transition: transform .2s
+}
+.dashboardLink:hover {
+    transform: scale(1.05);
+    color: rgba(0,170,162,1)
+}
+
+.icon-size {
+    font-size: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .icon-size {
+    font-size: 100px;
+  }
+}
+
+</style>
   

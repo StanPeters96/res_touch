@@ -2,7 +2,7 @@
     <div>
         <h1 class="text-center mb-2" >Uitgevoerde inspecties</h1>
         <v-card
-            v-for="inspection in inspections"
+            v-for="inspection in store.inspections"
             :key="inspection.id"
             class="rounded border mx-auto elevation-12 pa-3"
             width="fit-content"
@@ -55,8 +55,10 @@
 </template>
 
 <script>
+import {useInspectionsStore} from "@/stores/inspectionsStore.js";
 
 export default {
+
 name: 'InspectionsView',
 
 components: {
@@ -65,7 +67,9 @@ components: {
 
 data() {
     return {
-      inspections: [],
+    //   inspections: [],
+    store: useInspectionsStore ()
+
     };
   },
 mounted() {
@@ -73,21 +77,24 @@ mounted() {
   },
 
 methods: {
-    async fetchInspections() {
-        try {
-            const response = await fetch('/data/res_inspection.json');
-            console.log('Response status:', response.status);
-        if(!response.ok) {
-            throw new Error('No valid network response')
-        }
-        const data = await response.json()
-        console.log('fetched data: ', data);
-        this.inspections = data;
-        console.log(data);
-        } catch (error) {
-            console.log('Error when fetching JSON', error);
-        } 
-    },
-}
+    // async fetchInspections() {
+    //     try {
+    //         const response = await fetch('/data/res_inspection.json');
+    //         console.log('Response status:', response.status);
+    //     if(!response.ok) {
+    //         throw new Error('No valid network response')
+    //     }
+    //     const data = await response.json()
+    //     console.log('fetched data: ', data);
+    //     this.inspections = data;
+    //     console.log(data);
+    //     } catch (error) {
+    //         console.log('Error when fetching JSON', error);
+    //     } 
+    // },
+    fetchInspections () {
+        this.store.fetchInspections()
+    }
+    }
 }
 </script>
