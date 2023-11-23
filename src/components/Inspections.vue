@@ -1,6 +1,6 @@
 <template>
     <div class="mx-3">
-        <h1 class="text-center mb-2" >Uitgevoerde inspecties</h1>
+        <h1 class="text-center my-2" >Uitgevoerde inspecties</h1>
         <v-card
             v-for="inspection in store.inspections"
             :key="inspection.id"

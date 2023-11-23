@@ -10,8 +10,12 @@
         <v-app-bar-title>
             <router-link class="homeLink" to="/">Real Estate Care</router-link>
         </v-app-bar-title>
-        <v-icon class="mx-2">mdi-bell</v-icon>
-        <v-icon class="mr-4 ml-2">mdi-cog</v-icon>
+        <router-link class="homeLink" to="/settings">
+            <v-icon class="mx-2">mdi-bell</v-icon>
+        </router-link>
+        <router-link class="homeLink" to="/settings">
+            <v-icon class="mr-4 ml-2">mdi-cog</v-icon>
+        </router-link>
     </v-app-bar>
 </template>
 
