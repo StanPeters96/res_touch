@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mx-3">
         <h1 class="text-center mb-2" >Uitgevoerde inspecties</h1>
         <v-card
             v-for="inspection in store.inspections"
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </v-card>
-        </div>
+    </div>
 </template>
 
 <script>
