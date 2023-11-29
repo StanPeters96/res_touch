@@ -1,6 +1,8 @@
 # real_estate_care_touch (INZENDCODE: 32411SA1)
 gemaakt door: Stan Peters
 
+Bekijk site: [Real Estate Care (via Netlify)](https://res-touch-app.netlify.app/).
+
 ## Werking applicatie:
 1. Log in via inlogscherm (mock up)
 2. Voer tweestap verificatie uit (mock up)
@@ -20,7 +22,7 @@ Nee, er wordt gedacht aan H1, H2 en P elementen en ook is via symbolen en tekst 
 ## Voldoet het project aan de WCAG 2.1 richtlijnen?
 Nee, hier is ook ruimte voor veel verbetering, al moet ik eerlijk zeggen (niet om bijdehand te zijn), deze specfieke app wordt ontwikkeld voor mensen die huizen moeten inspecteren, een blind persoon kan niet zien of een muur van kleur is veranderd na de laatste huurder. Iemand die dit werk doet functioneert in die zin dat er geen fysieke/audio/visuele beperkingen zijn.
 
-## Project setup
+## Project setup (Instructies runnen VUE project
 ```
 npm install
 ```
