@@ -10,7 +10,7 @@
                 "damageSort" : "Vandalisme",
                 "date" : "2023-11-09T15:30:45+01:00",
                 "urgentToRepair" : false,
-                "description" : "De tussendeur van de woning is met geweldd ingetrapt, nieuwe deur is nodig voor nieuwe huurders."
+                "description" : "De tussendeur van de woning is met geweld ingetrapt, nieuwe deur is nodig voor nieuwe huurders."
             },
             "deferredMaintenance" : {
                 "location" : "Amsterdam",
@@ -28,7 +28,7 @@
                 "description" : "De verwarming is inderdaad kapot, moet gerepareerd worden door Eneco."
             },
             "inventorizeModifications" :{
-                "currentSituationAndAlreadyDocumentedModifications" : "@/assets/report1.pdf",
+                "currentSituationAndAlreadyDocumentedModifications" : "88009403-Bedieningsvoorschrift-Xtend-NL.pdf",
                 "locationModification" : "Zolder",
                 "modificationMadeBy" : " onbekend",
                 "descriptionOfModification" : "De ramen zijn geblindeerd",

@@ -1,21 +1,30 @@
 <template>
     <div class="mx-3">
         <h1 class="text-center my-2">Knowledge Base</h1>
+
         <v-card
             v-for="inspection in store.inspections"
             :key="inspection.id"
-            class="rounded border mx-auto elevation-12 pa-3"
-            width="fit-content"
+            max-width="500" 
+            class="mx-auto mb-5 pa-5" 
+            color="rgba(30, 41, 47, 0.9)"
+            elevation = "5"
         >
-            <div
+            <v-card
                 v-for="report in inspection"
                 :key="report.id"
-            >
-                <h4>Pdf bij inspectie id: {{ report.id }}</h4>
-                <div class="border rounded my-2 pa-2 elevation-2">
-                    <p>Testprocedure link: {{ report.inspectionTechnicalInstallations.testProcedure }}</p>
-                </div>
-            </div>
+                max-width="450" 
+                class="mx-auto mb-5 pa-5"
+                elevation = "5"
+                >
+                <h4>Pdf gebruikt bij inspectie id: {{ report.id }}</h4>
+                <v-card-item
+                class="border rounded my-2 pa-2 elevation-2"
+                prepend-icon="mdi-download"
+                >
+                    <a target="_blank" :href="'../assets/' + report.inspectionTechnicalInstallations.testProcedure">{{ report.inspectionTechnicalInstallations.testProcedure }}</a>
+                </v-card-item>
+            </v-card>
         </v-card>
     </div>
 </template>
@@ -34,7 +43,6 @@ data() {
     return {
     //   inspections: [],
     store: useInspectionsStore ()
-
     };
   },
 mounted() {

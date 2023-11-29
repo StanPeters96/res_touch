@@ -3,7 +3,7 @@
     <div class="mx-3">
         <v-card 
         max-width="500" 
-        class="mx-auto pa-5" 
+        class="mx-auto mb-5 pa-5" 
         color="rgba(30, 41, 47, 0.9)"
         elevation = "5"
         >

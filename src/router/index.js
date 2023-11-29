@@ -5,14 +5,15 @@ import { createRouter, createWebHistory } from "vue-router";
 import DashboardView from '@/components/Dashboard.vue'
 import InspectionsView from '@/components/Inspections.vue'
 import Settingsview from '@/components/Settings.vue'
-import CompletedView from '@/components/Completed.vue'
+import LoginView from '@/components/Login.vue'
 import KnowledgeBaseView from '@/components/KnowledgeBase.vue'
 import ScheduledView from '@/components/Scheduled.vue'
+import TwoFactorView from '@/components/TwoFactor.vue'
 
 //all routes
 const routes = [{
-        path: "/",
-        name: 'home',
+        path: "/dashboard",
+        name: 'dashboard',
         component: DashboardView
     },
     {
@@ -26,9 +27,14 @@ const routes = [{
         component: Settingsview
     },
     {
-        path: "/completed",
-        name: 'completed',
-        component: CompletedView
+        path: "/",
+        name: 'login',
+        component: LoginView
+    },
+    {
+        path: "/twofactor",
+        name: 'twofactor',
+        component: TwoFactorView
     },
     {
         path: "/knowledge-base",

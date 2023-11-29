@@ -10,7 +10,7 @@
                 "damageSort" : "Vandalisme",
                 "date" : "2023-11-09T15:30:45+01:00",
                 "urgentToRepair" : false,
-                "description" : "De tussendeur van de woning is met geweldd ingetrapt, nieuwe deur is nodig voor nieuwe huurders."
+                "description" : "De tussendeur van de woning is met geweld ingetrapt, nieuwe deur is nodig voor nieuwe huurders."
             },
             "deferredMaintenance" : {
                 "location" : "Amsterdam",
@@ -23,7 +23,7 @@
                 "location" : "Amsterdam",
                 "installationType" : "Verwarming",
                 "reportedMalfunction" : "Verwaming doet het niet, blijft koud.",
-                "testProcedure" : "@/assets/eneco_installatie.pdf",
+                "testProcedure" : "88009403-Bedieningsvoorschrift-Xtend-NL.pdf",
                 "approved" : false,
                 "description" : "De verwarming is inderdaad kapot, moet gerepareerd worden door Eneco."
             },
@@ -59,7 +59,7 @@
                 "location" : "Rotterdam",
                 "installationType" : "Elektriciteit",
                 "reportedMalfunction" : "Stopcontacten in de woonkamer werken niet.",
-                "testProcedure" : "@/assets/stedin_installation.pdf",
+                "testProcedure" : "Bedieningsvoorschrift-Intergas-Xtreme-84003402.pdf",
                 "approved" : false,
                 "description" : "Problemen met elektrische bedrading geconstateerd, Stedin moet worden ingeschakeld voor reparatie."
             },
@@ -94,7 +94,7 @@
                 "location" : "Utrecht",
                 "installationType" : "Airconditioning",
                 "reportedMalfunction" : "Airco in slaapkamer maakt vreemd geluid.",
-                "testProcedure" : "@/assets/cooling_experts_test.pdf",
+                "testProcedure" : "88398702-Bedieningsvoorschrift-HReco.pdf",
                 "approved" : false,
                 "description" : "Problemen met de airconditioningseenheid, gespecialiseerde inspectie vereist."
             },
@@ -129,7 +129,7 @@
                 "location" : "Den Haag",
                 "installationType" : "Beveiligingssysteem",
                 "reportedMalfunction" : "Alarmsysteem geeft foutmeldingen.",
-                "testProcedure" : "@/assets/security_company_test.pdf",
+                "testProcedure" : "Bedieningsvoorschrift-HRE-IG-88558702.pdf",
                 "approved" : false,
                 "description" : "Fouten in het beveiligingssysteem geconstateerd, professionele reparatie vereist."
             },
@@ -164,7 +164,7 @@
                 "location" : "Eindhoven",
                 "installationType" : "Waterleiding",
                 "reportedMalfunction" : "Leidingen in de badkamer lekken.",
-                "testProcedure" : "@/assets/water_company_test.pdf",
+                "testProcedure" : "Xource-7-Verklaring-monovalent-tapwater.pdf",
                 "approved" : false,
                 "description" : "Lekkage in de waterleidingen, directe reparatie nodig."
             },

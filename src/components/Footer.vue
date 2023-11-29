@@ -10,7 +10,7 @@
         </v-btn>
 
         <v-btn value="favorites">
-            <router-link class="homeLink" to="/">
+            <router-link class="homeLink" to="/inspections">
                 <div class="d-flex flex-column align-center">
                     <v-icon>mdi-magnify</v-icon>
                     <span>Search</span>
@@ -18,7 +18,7 @@
             </router-link>
         </v-btn>
             <v-btn value="nearby">
-                <router-link class="homeLink" to="/">
+                <router-link class="homeLink" to="/knowledge-base">
                     <div class="d-flex flex-column align-center">
                         <v-icon>mdi-information</v-icon>
                         <span>Information</span>

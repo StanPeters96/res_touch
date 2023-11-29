@@ -4,13 +4,18 @@
         <v-card
             v-for="inspection in store.inspections"
             :key="inspection.id"
-            class="rounded border mx-auto elevation-12 pa-3"
-            width="fit-content"
+            max-width="500" 
+            class="mx-auto mb-5 pa-5" 
+            color="rgba(30, 41, 47, 0.9)"
+            elevation = "5"
         >
-            <div
+            <v-card 
                 v-for="report in inspection"
                 :key="report.id"
-            >
+                max-width="450" 
+                class="mx-auto mb-5 pa-5"
+                elevation = "5"
+                >
                 <h2>Gegevens rapportage ID: {{ report.id }}</h2>
                 <div class="border rounded my-2 pa-2 elevation-2">
                     <p>Aangemaakt: {{ report.created }} </p>
@@ -49,7 +54,7 @@
                     <p>Te ondernemen actie: {{ report.inventorizeModifications.actionToBeTaken }}</p>
                     <p>Opmerkingen: {{ report.inventorizeModifications.description }}</p>
                 </div>
-            </div>
+            </v-card>
         </v-card>
     </div>
 </template>
